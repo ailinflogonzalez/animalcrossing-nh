@@ -139,6 +139,7 @@ position: absolute;
 }
 
 .login {
+    width: 100%;
     font-family: "Zilla Slab", serif;
     font-weight: bold;
     font-size: 21px;
@@ -522,6 +523,49 @@ input, select {
   height: auto;
 }
 
+.footer {
+      background-image: url("img/background/wood.jpg");
+      background-repeat: repeat;
+      background-position:center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 23px;
+}
+
+.foot-txt {
+  text-align: center;
+}
+
+.redes {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+
+.red-icon > img {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+}
+
+.form-button {
+    margin: 0 auto;
+    width: 60%;
+    padding: 15px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
 
 
 /* .cont-cons {
