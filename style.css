@@ -138,7 +138,7 @@ position: absolute;
   }
 }
 
-.login {
+button {
     width: 100%;
     font-family: "Zilla Slab", serif;
     font-weight: bold;
@@ -147,12 +147,13 @@ position: absolute;
     border-radius: 13px;
     border: 1px solid rgb(255,245,99);
     color: #000000;
+    text-decoration: none;
     padding: 12px;
     background: rgb(255,245,99);
     cursor: pointer;
 }
 
-.login:hover {
+button:hover {
   box-shadow: 5px 5px rgb(159, 159, 159, 0.20);
 }
 
@@ -176,14 +177,15 @@ section {
     font-family: 'Libre Franklin', sans-serif;
     min-width: 270px;
     max-width: 350px;
-    height: 98%;
+    height: auto;
     font-size: 20px;
     left: 9%;
-    /* top: 210px; */
+    top: 210px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
+    align-items: stretch;
 }
 
 .actualizaciones {
@@ -264,7 +266,7 @@ span {
 .cards a {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -454,7 +456,6 @@ span {
 
 .formulario {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: larger;
     background-color: rgb(242,242,242);
     width: 100%;
     max-width: 1400px;
@@ -489,12 +490,21 @@ span {
 .login-form {
     text-align: center;
     background-color: rgb(255,255,255);
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 13px;
     justify-content: center;
     align-items: stretch;
+    padding: 7px;
+}
+
+.login-form a {
+   text-align: left;
+   text-decoration: underline;
+   font-size: 15px;
+   padding-left: 7px;
+   font-weight: bold;
 }
 
 .submit-form {
@@ -524,9 +534,9 @@ input, select {
 }
 
 .footer {
-      background-image: url("img/background/wood.jpg");
+      background-image: url("img/background/sand.jpg");
       background-repeat: repeat;
-      background-position:center;
+      background-position: bottom;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -543,81 +553,39 @@ input, select {
   text-align: center;
 }
 
-.redes {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 17px;
+.foot-txt:first-child {
+  text-transform: uppercase;
 }
 
-.red-icon > img {
+.foot-txt:last-child{
+  font-size: small;
+}
+
+.redes {
     width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+
+.red-icon img {
+    width: auto;
     height: 100%;
     padding: 4px;
-    border: 1px solid #FFFFFF;
     border-radius: 7px;
 }
 
 .form-button {
+  font-family: 'Libre Franklin', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: rgb(255,255,255);
+    border: 1px solid #000000;
+    border-radius: 9px;
     margin: 0 auto;
     width: 60%;
     padding: 15px;
     letter-spacing: 4px;
     cursor: pointer;
 }
-
-
-/* .cont-cons {
-     width: auto;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-} */
-
-/* .cont-cons-txt {
-    width: 100%;
-    height: 100%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-/*     flex: 1 1 340px; */
-    /* align-content: flex-end; */
-    /* margin: 0 auto;
-/*   padding: 10%;
-  gap: 30px; */
-
-
-/* .cons-txt {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .cons-txt > p {
-  width: 50%;
-} */
-
-/* .img_cons {
-    width: 50%;
-     min-width: 300px;
-    display: flex;
-    flex: 1 1 300px; */
-/*     margin: 0 auto; */
-
-/* .img_cons {
-    max-width: 0px;
-} */
-
-/* .img_c {
-    width: 75%;
-}
- */
-
-/* .img-cons img {
-  width: 50%;
-  height: auto;
-} */
