@@ -8,13 +8,13 @@
 }
 
 body {
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
 }
 
 header {
@@ -25,9 +25,9 @@ header {
   font-family: "Zilla Slab", serif;
   justify-content: space-around;
   padding: 9px;
-/*   margin: 5px auto; */
-  border: 2px solid #FFFFFF;
-  background-color: #FFFFFF;
+  /*   margin: 5px auto; */
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -35,7 +35,7 @@ header {
 
 .nav-link {
   color: #000000;
-/*   margin: 0 -0.25rem;
+  /*   margin: 0 -0.25rem;
   padding: 0 0.25rem; */
   position: relative;
 }
@@ -84,22 +84,23 @@ header {
   opacity: 0;
 }
 
-.fa-bars:before, .fa-navicon:before {
-    content: "☰";
-    font-style: normal;
+.fa-bars:before,
+.fa-navicon:before {
+  content: "☰";
+  font-style: normal;
 }
 
 @media (max-width: 600px) {
   .header {
     padding: 0px 50px 0px 10px;
   }
-   .navbar i {
+  .navbar i {
     display: flex;
   }
 
   .navbar-list {
-  position: absolute;
-   background-color: rgb(242,242,242);
+    position: absolute;
+    background-color: rgb(242, 242, 242);
     flex-direction: column;
     top: 70px;
     right: 0;
@@ -110,40 +111,44 @@ header {
     font-size: xx-large;
   }
 
-/*    #toggle-menu {
+  /*    #toggle-menu {
   opacity: 1;
 } */
 
-  .navbar-list { display: none; }
-  #toggle-menu:checked ~ .navbar-list { display: flex; }
-/*
+  .navbar-list {
+    display: none;
+  }
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+  /*
   #toggle-menu:checked + .navbar-list {
     display: flex;
   } */
 }
 
 button {
-    width: 100%;
-    font-family: "Zilla Slab", serif;
-    font-weight: bold;
-    font-size: 21px;
-    transition: none;
-    border-radius: 13px;
-    border: 1px solid rgb(255,245,99);
-    color: #000000;
-    text-decoration: none;
-    padding: 12px;
-    background: rgb(255,245,99);
-    cursor: pointer;
+  width: 100%;
+  font-family: "Zilla Slab", serif;
+  font-weight: bold;
+  font-size: 21px;
+  transition: none;
+  border-radius: 13px;
+  border: 1px solid rgb(255, 245, 99);
+  color: #000000;
+  text-decoration: none;
+  padding: 12px;
+  background: rgb(255, 245, 99);
+  cursor: pointer;
 }
 
 button:hover {
-  box-shadow: 5px 5px rgb(159, 159, 159, 0.20);
+  box-shadow: 5px 5px rgb(159, 159, 159, 0.2);
 }
 
 section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .hero {
@@ -157,98 +162,98 @@ section {
 }
 
 .hero-txt {
-    position: absolute;
-    font-family: 'Libre Franklin', sans-serif;
-    min-width: 270px;
-    max-width: 350px;
-    height: auto;
-    font-size: 20px;
-    left: 9%;
-    top: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: stretch;
+  position: absolute;
+  font-family: "Libre Franklin", sans-serif;
+  min-width: 270px;
+  max-width: 350px;
+  height: auto;
+  font-size: 20px;
+  left: 9%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: stretch;
 }
 
 .actualizaciones {
-    background-image: url("img/background/wood.jpg");
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 23px;
+  background-image: url("img/background/wood.jpg");
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 23px;
 }
 
 .act-txt {
-    display: flex;
-    justify-content: center;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .cards-act {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 90%;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90%;
+  flex-wrap: wrap;
 }
 
 .cards {
-/*  background-image: url("img/actualizaciones/bckg-act.jpg");
+  /*  background-image: url("img/actualizaciones/bckg-act.jpg");
     background-repeat: no-repeat;
     background-position: center; */
-background-color: rgb(238, 227, 227);
-    width: 300px;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
-    padding: 13px;
-    border-radius: 13px;
-    margin: 13px;
-    align-items: center;
-    justify-content: space-between;
+  background-color: rgb(238, 227, 227);
+  width: 300px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding: 13px;
+  border-radius: 13px;
+  margin: 13px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cards:first-child {
-  border: 8px solid rgb(223,200,104);
+  border: 8px solid rgb(223, 200, 104);
 }
 
 .cards:nth-child(2) {
-  border: 8px solid rgb(68,137,114);
+  border: 8px solid rgb(68, 137, 114);
 }
 
 .cards:nth-child(3) {
-  border: 8px solid rgb(52,120,143);
+  border: 8px solid rgb(52, 120, 143);
 }
 
 .cards:last-child {
-  border: 8px solid rgb(52,120,143);
+  border: 8px solid rgb(52, 120, 143);
 }
 
 .cards p {
   font-family: "Zilla Slab", serif;
-  color: rgb(0,131,120);
+  color: rgb(0, 131, 120);
   font-size: x-large;
   text-align: center;
   font-weight: bold;
 }
 
 span {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: bolder;
 }
 
 .cards a {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
@@ -261,106 +266,106 @@ span {
 }
 
 .trailer {
-     background-image: url("img/background/moving.gif");
-     background-repeat: repeat;
-/*     background-size: cover; */
-    background-position: center;
-    width: 100%;
-    max-width: 1400px;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  background-image: url("img/background/moving.gif");
+  background-repeat: repeat;
+  /*     background-size: cover; */
+  background-position: center;
+  width: 100%;
+  max-width: 1400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .video {
-    width: 100%;
-    max-width: 500px;
-    max-height: 700px;
-    min-height: 280px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 700px;
+  min-height: 280px;
 }
 
 .tra-txt > h2 {
-    font-family: "Zilla Slab", serif;
-  color: rgb(0,131,120);
+  font-family: "Zilla Slab", serif;
+  color: rgb(0, 131, 120);
   font-size: xx-large;
   text-align: center;
   font-weight: bold;
   padding: 23px;
 }
 
-.pers-txt  {
+.pers-txt {
   height: 80px;
 }
 
 .vecinos {
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .modelos {
-      display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
 }
 
 .personajes {
-    cursor: pointer;
-/*     border: 1px solid red; */
+  cursor: pointer;
+  /*     border: 1px solid red; */
 }
 
 .pers-txt {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .personajes {
-    position: relative;
-    height: auto;
-    width: 250px;
-    display: flex;
-    justify-content: space-around;
+  position: relative;
+  height: auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .img__description {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-/*     background: rgb(255,250,228, 0.85); */
-    background: rgb(255,255,255, 0.85);
-    color: rgb(135,118,88);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 7px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*     background: rgb(255,250,228, 0.85); */
+  background: rgb(255, 255, 255, 0.85);
+  color: rgb(135, 118, 88);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 7px;
 }
 
 .img__description span {
-  font-family: 'Libre Franklin', sans-serif;
-  color: rgb(23,101,59);
-  background: rgb(117,222,94);
+  font-family: "Libre Franklin", sans-serif;
+  color: rgb(23, 101, 59);
+  background: rgb(117, 222, 94);
   border-radius: 23px;
   padding: 3px;
 }
@@ -371,24 +376,24 @@ span {
 }
 
 .merch {
-    background-image: url("img/background/wood.jpg");
-    background-repeat: repeat;
-    background-position:center;
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  background-image: url("img/background/wood.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .cards-merch {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .merch-img {
@@ -396,31 +401,31 @@ span {
 }
 
 .cards h2 {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .consola {
-    width: auto;
-    max-width: 1400px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: auto;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cont-cons {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-cons {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .img_c {
@@ -428,37 +433,37 @@ span {
 }
 
 .cons-txt {
-    width: 80%;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .cons-txt > p {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: x-large;
-    font-weight: bold;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .formulario {
-    font-family: 'Libre Franklin', sans-serif;
-    background-color: rgb(242,242,242);
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    gap: 30px;
+  font-family: "Libre Franklin", sans-serif;
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  gap: 30px;
 }
 
 .form-img {
-    width: 100%;
-    height: 70px;
-    /* margin: 0 auto; */
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 70px;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
 }
 
 .form-img > img {
@@ -474,43 +479,44 @@ span {
 }
 
 .login-form {
-    text-align: center;
-    background-color: rgb(255,255,255);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    justify-content: center;
-    align-items: stretch;
-    padding: 7px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 7px;
 }
 
 .login-form a {
-   text-align: left;
-   text-decoration: underline;
-   font-size: 15px;
-   padding-left: 7px;
-   font-weight: bold;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 15px;
+  padding-left: 7px;
+  font-weight: bold;
 }
 
 .submit-form {
-    border: 9px solid rgb(255,255,255);
-    border-radius: 13px;
-    padding: 13px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    align-items: stretch;
+  border: 9px solid rgb(255, 255, 255);
+  border-radius: 13px;
+  padding: 13px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: stretch;
 }
 
-input, select {
+input,
+select {
   padding: 13px;
 }
 
 .img-login {
-    width: 100%;
-    filter: drop-shadow(4px 3px 7px rgb(176, 173, 173));
+  width: 100%;
+  filter: drop-shadow(4px 3px 7px rgb(176, 173, 173));
 }
 
 .img-login > img {
@@ -520,19 +526,19 @@ input, select {
 }
 
 .footer {
-      background-image: url("img/background/sand.jpg");
-      background-repeat: repeat;
-      background-position: bottom;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 23px;
+  background-image: url("img/background/sand.jpg");
+  background-repeat: repeat;
+  background-position: bottom;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 23px;
 }
 
 .foot-txt {
@@ -543,35 +549,51 @@ input, select {
   text-transform: uppercase;
 }
 
-.foot-txt:last-child{
+.foot-txt:last-child {
   font-size: small;
 }
 
 .redes {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    gap: 11px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 11px;
 }
 
 .red-icon img {
-    width: auto;
-    height: 100%;
-    padding: 4px;
-    border-radius: 7px;
+  width: auto;
+  height: 100%;
+  padding: 4px;
+  border-radius: 7px;
 }
 
 .form-button {
-  font-family: 'Libre Franklin', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    background: rgb(255,255,255);
-    border: 1px solid #000000;
-    border-radius: 9px;
-    margin: 0 auto;
-    width: 60%;
-    padding: 15px;
-    letter-spacing: 4px;
-    cursor: pointer;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  background: rgb(255, 255, 255);
+  border: 1px solid #000000;
+  border-radius: 9px;
+  margin: 0 auto;
+  width: 60%;
+  padding: 15px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+/* actualizacion-media-query-form */
+@media (max-width: 760px) {
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .login-form,
+  .submit-form {
+    width: 90%;
+  }
 }
